@@ -212,7 +212,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; septembre 2023</span>
+                        <span>Copyright &copy; novembre 2023</span>
                     </div>
                     <div>
                         <a href="#" target="blank">GNMARKET</a>

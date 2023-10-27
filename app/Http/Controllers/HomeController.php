@@ -26,10 +26,10 @@ class HomeController extends Controller
     {
         //Ceci est juste mais non sécurisé
         //$response = Http::get('http://127.0.0.1:81/gn_hotel_api/public/api/list_vente');
-        $response = Http::withBasicAuth('api_admin','Pass1234')->get('http://127.0.0.1:81/gn_hotel_api/public/api/list_vente');
+        //$response = Http::withBasicAuth('api_admin','Pass1234')->get('http://127.0.0.1:81/gn_hotel_api/public/api/list_vente');
         
         
-        //$response = Http::withBasicAuth('api_admin','Pass1234')->get('http://172.27.156.43:81/gn_hotel_api/public/api/list_vente');
+        $response = Http::withBasicAuth('api_admin','Pass1234')->get('http://172.27.156.43:81/gn_hotel_api/public/api/list_vente');
         
         $jsonData = $response->json();
 
@@ -39,5 +39,6 @@ class HomeController extends Controller
         dd($jsonData);
 
         //return view('vente.index', ['ventes'=>$jsonData['ventes']]);
+        //return view('vente.index');
     }
 }
