@@ -1,0 +1,26 @@
+CREATE TABLE VENTE(
+	ID_AUTO int primary key AUTO_INCREMENT NOT NULL,
+	DATE_VENTE datetime NULL,
+	UserId varchar(50) NULL
+	)
+
+CREATE TABLE COMPTEPASSWORD(
+	Id int primary key AUTO_INCREMENT NOT NULL,
+	UserName nvarchar(100) NULL,
+	Password1 nvarchar(100) NULL,
+	IdRole int NULL,         ---à puiser dans ROLEUSER
+	Nom varchar(70) NULL,
+	NomJeuneFille varchar(70) NULL,
+	Prenom varchar(70) NULL,
+	Sexe varchar(10) NULL,
+	Telephone varchar(70) NULL,
+	Email varchar(200) NULL,
+	DateNaiss varchar(70) NULL,
+	UserId nvarchar(50) NULL,
+	IdSuccursalle int NULL    ---toujours = 1
+	)
+
+CREATE TABLE ROLEUSER(
+	IdRole int primary key AUTO_INCREMENT NOT NULL,
+	LibelleRole nvarchar(50) NULL,
+)
